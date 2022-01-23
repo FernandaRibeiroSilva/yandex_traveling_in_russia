@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Mesto</title>
+        <link href="./pages/index.css" rel="stylesheet">
+    </head>
+    <body class="page">
+        <header class="header page__header">
+            <img src="./images/logo.svg" alt="Лого Mesto" class="header__logo">
+        </header>
+        <main class="content page__content">
+            <section class="profile">
+                <div class="profile__info">
+                    <img class="profile__avatar" src="./images/avatar.jpg" alt="Аватар профиля">
+                    <div class="profile__info-text">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <p class="profile__activity">Исследователь океана</p>
+                        <button type="button" aria-label="Редактировать профиль" name="profile-edit-button" class="button profile__edit-button"></button>
+                    </div>
+                </div>
+                <button type="button" aria-label="Добавить карточку" name="profile-add-button" class="button profile__add-button"></button>
+            </section>
+            <section class="places page__places" aria-label="Карточки мест">
+                <ul class="cards">
+                    <li class="card">
+                        <img class="card__image" src="./images/photo-grid-tuman.jpg" alt="tuman">
+                        <div class="card__info">
+                            <h2 class="card__title">Туман</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card__image" src="./images/place-altai.jpg" alt="altai">
+                        <div class="card__info">
+                            <h2 class="card__title">Altai</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card__image" src="./images/place-karelia.jpg" alt="karelia">
+                        <div class="card__info">
+                            <h2 class="card__title">Karelia</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card__image" src="./images/place-kolsky.jpg" alt="kolsky">
+                        <div class="card__info">
+                            <h2 class="card__title">Kolsky</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card__image" src="./images/place-kosa.jpg" alt="kosa">
+                        <div class="card__info">
+                            <h2 class="card__title">Kosa</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card__image" src="./images/place-winter-baikal.jpg" alt="baikal">
+                        <div class="card__info">
+                            <h2 class="card__title">Baikal</h2>
+                            <button type="button" aria-label="Нравится" class="button card__like-button"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer page__footer">
+            <p class="footer__copyright">©2021 Mesto Russia</p>
+        </footer>
+        <div class="popup">
+            <div class="popup__container">
+                <button type="button" aria-label="Закрыть форму" class="button popup__close-button"></button>
+                <form class="popup__form" name="profile-edit-form" novalidate="">
+                    <h2 class="popup__heading">Редактировать профиль</h2>
+                    <fieldset class="popup__info">
+                        <input class="popup__input" name="profile-name" placeholder="Имя профиля" minlength="2" maxlength="40">
+                        <input class="popup__input" name="profile-activity" placeholder="Деятельность" minlength="2" maxlength="200">
+                        <button type="submit" class="button popup__save-button">Сохранить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
